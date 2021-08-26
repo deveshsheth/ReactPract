@@ -14,8 +14,17 @@ import { Redirect, Route } from 'react-router-dom';
 import Welcome from './Pages/Welcome';
 import { Product } from './Pages/Product';
 import { ProductDetails } from './Pages/ProductDetails';
+import { Form } from './Pages/Form';
+import { UserList } from './api/UserList';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
+
+
+  
+
   return (
 
     <div>
@@ -43,6 +52,14 @@ function App() {
         
         <Route path="/productdetails">
           <ProductDetails/>
+        </Route>
+
+        <Route path="/form">
+          <Form/>
+        </Route>
+
+        <Route path="/userlist">
+          <UserList/>
         </Route>
 {/* 
         <Route path="/product/:produamectId">

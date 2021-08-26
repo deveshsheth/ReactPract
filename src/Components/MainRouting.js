@@ -33,11 +33,19 @@ export const MainRouting = () => {
                 Home
               </MDBNavbarLink>
               <MDBNavbarLink active aria-current='page'>
-                <Link to="/product" style={{ textDecoration: 'none' }}>Product</Link>
+                <Link to="/product" style={{ color: '#000' }}>Product</Link>
               </MDBNavbarLink>
 
               <MDBNavbarLink active aria-current='page'>
-                <Link to="/productdetails">Product Details</Link>
+                <Link to="/productdetails" style={{ color: '#000' }}>Product Details</Link>
+              </MDBNavbarLink>
+
+              <MDBNavbarLink active aria-current='page'>
+                <Link to="/form" style={{ color: '#000' }}>Forms</Link>
+              </MDBNavbarLink>
+
+              <MDBNavbarLink active aria-current='page'>
+                <Link to="/userlist" style={{ color: '#000' }}>API</Link>
               </MDBNavbarLink>
               {/* <MDBNavbarLink href='#'>Features</MDBNavbarLink>
           <MDBNavbarLink href='#'>Pricing</MDBNavbarLink>
